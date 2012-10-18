@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add a game App * Anton Isayev</title>
+		<meta charset ="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+		<link href="CSS/styles.css" rel="stylesheet" type="text/css">
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/json.js" type="text/javascript"></script>
+	</head>
+	<body>
+			<h1>Add A Game </h1>
+			
+			<form id="AddGameForm" action = "#" method="post">
+				<fieldset>
+					<ul id="errors"></ul>
+					<legend>Game information</legend>
+					<ul id="game_info">
+						<li><label for="gname">Game name:</label><input type="text" id="gname" /></li>
+						<li><label for="rday">Relise Date:</label><input type="text" id="rday"/></li>
+						<li><label for="aat">Availble at:</label><input type="text" id="aat"/></li>
+						<li><label for="pri">Price:</label><input type="text" id="pri"/></li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Game Info</legend>
+				<ul>
+					<li class="gameinfo">Game type:</li>
+					<li id="gameinfos"></li>
+					<li class="gameinfo">Game Category:
+						<ul>
+							<li><input type="checkbox" id ="coop" value="Yes"/><label for="coop">Co-op</label></li>
+							<li><input type="checkbox" id ="multyplayer" value="Yes"/><label for="multyplayer">Multy-player</label></li>
+							<li><input type="checkbox" id ="singleplayer" value="Yes"/><label for="singleplayer">Single-player</label></li>
+						</ul>
+					</li>	
+					<li class="gameinfo">Console:
+							<ul>
+								<li><input type="radio"  value="XBox" id ="XBox" name="console" /><label for="XBox">XBox</label></li>
+								<li><input type="radio"  value="PS3" id ="PS3" name="console" /><label for="PS3">PS3</label></li>
+								<li><input type="radio"  value="PC" id ="PC" name="console" /><label for="PC">PC</label></li>
+								<li><input type="radio"  value="Wii" id ="Wii" name="console" /><label for="Wii">Wii</label></li>
+								<li><input type="radio"  value="MAC" id ="MAC" name="console" /><label for="MAC">MAC</label></li>
+							</ul>
+					</li>			
+					<li class="gameinfo">Priority:<br/>
+						<input id="priority" type="range" min="0" max="10" value="0" step="1" onchange=/>
+					</li>		
+					<li class="gameinfo">Aditional Info</li>
+				</ul>		
+				<textarea id="aditionalinfo"></textarea>	
+				</fieldset>
+			</form>
+		<input type="submit" value="Add A Game" id="submit"/>
+		<nav style="display:inline;">
+			<a href="#" id = "clear"> Clear Stored Data</a>
+			<a href="#" id = "displayLink">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add new game</a>
+		</nav>
+	</body>
+</html>

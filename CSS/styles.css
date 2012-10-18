@@ -1,0 +1,51 @@
+body {background-color:#999;
+	  color:white;
+}
+h1{font-family: "Courier New";
+  	color: #ffcc99;
+  	font-style: italic;
+  	font-size: 40px;
+  	border: 1px solid white;
+  	padding: 20px 0px 10px 35px;
+  	background-color: #333;
+
+}
+legend{
+	color: #ffcc99;
+	font-style: italic;
+	font-size: 30px;
+}
+.gameinfo{
+	color: #ffcc99;
+	font-size: 20px;
+}
+#gameinfos{
+	color: #ffcc99;
+	font-size: 20px;
+	display: block;
+}
+#input{
+	font-size: 20px;
+}
+#input ul li {
+	display: block;
+}
+#game_info label{
+	display: block;
+}
+fieldset{
+	background-color: #333;
+	margin-bottom: 10px;
+}
+
+a{
+	color: #333;
+	padding: 10px;
+	background-color: #ffcc99;
+}
+
+select{
+	font-size: 20px;
+}
+#aditionalinfo{
+	margin-left: 30px;
