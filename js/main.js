@@ -118,6 +118,7 @@ function getData(){
 		var obj = JSON.parse(value);
 		var makeSubList = document.createElement('ul');
 		makeli.appendChild(makeSubList);
+		getImage(obj.groups[1], makeSubList);
 		for(var n in obj){
 			var makeSubli = document.createElement('li');
 			makeSubList.appendChild(makeSubli);
@@ -130,9 +131,17 @@ function getData(){
 	toggleControls("on");
 }
 
+function getImage(catName, makeSubList){
+	var imageLi = document.createElement('li');
+	makeSubList.appendChild(imageLi);
+	var newImg = document.createElement('img');
+	var setSrc = newImg.setAttribute("src","img/" + catName + ".png");
+	imageLi.appendChild(newImage);
+}
+
 function autoFillData(){
 	for(var n in json){
-		var id = Math.floor(Math.random()*1000000001);
+		var id = Math.floor(Math.random( )*1000000001);
 		localStorage.setItem(id, JSON.stringify(json[n]));
 	}
 }
