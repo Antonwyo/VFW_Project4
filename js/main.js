@@ -193,13 +193,13 @@ function editItem(){
 			radios[i].setAttribute("checked", "checked")
 		}
 	}
-	if(item.coopValue[i] == "yes") {
+	if(item.coopValue[i] == "coop") {
 		$('Co-op Game:').setAttribute("checked", "checked");
 	}
-	if(item.multyplayerValue[i] == "yes") {
-		$('Multi-player Game').setAttribute("checked", "checked");
+	if(item.multyplayerValue[i] == "multyplayer") {
+		$('Multi-player Game:').setAttribute("checked", "checked");
 	}	
-	if(item.singleplayerValue[i] == "yes") {
+	if(item.singleplayerValue[i] == "singleplayer") {
 		$('Single-player Game:').setAttribute("checked", "checked");
 	}
 	$('priority').value = item.priority[1];
